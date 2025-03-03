@@ -1,0 +1,8 @@
+<form method="get">
+    {{ filter.form.as_p }}
+    <button type="submit">Фильтровать</button>
+</form>
+
+{% for response in filter.qs %}
+    <!-- Отображение откликов -->
+{% endfor %}
